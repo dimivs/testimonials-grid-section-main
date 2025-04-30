@@ -19,10 +19,6 @@ margin-top: 5rem;
 display: grid;
 gap: 1.5rem;
 
-/* grid-auto-flow: dense */
-/* container-type: inline-size; */
-/* container-name: main-container; */
-
 }
 
 .card{
@@ -51,7 +47,6 @@ margin-top: 1rem;
 
 .quote{
     margin-top: 1rem;
-
 }
 
 
@@ -59,7 +54,6 @@ margin-top: 1rem;
 .daniel{
 background-color: hsl(263, 55%, 52%);
 box-shadow: 0 5px 10px hsl(263, 55%, 52%);
-
 }
 
 .jonathan{
@@ -71,8 +65,6 @@ box-shadow: 0 5px 10px hsl(264, 82%, 80%);
     color: hsl(219, 29%, 14%);
     background-color:  hsl(214, 17%, 92%);
     box-shadow: 0 5px 10px hsl(264, 82%, 80%);
-   
-
 }
 
 .patrick{
@@ -92,20 +84,15 @@ box-shadow: 0 5px 10px hsl(264, 82%, 80%);
 
 @media screen and (min-width:1200px){
     main {
-
-        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-      
+        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); 
     }
 
     .kira {
         grid-column: 4;
-        grid-row: 1 / span 2;
-        
-        
+        grid-row: 1 / span 2;        
     }
 
     .jeanette {
-        /* grid-column: 1; */
         grid-row: 2;
     }
 
@@ -121,17 +108,13 @@ box-shadow: 0 5px 10px hsl(264, 82%, 80%);
    
 @media screen and (min-width: 750px) and (max-width: 1200px){
     main {
-
         grid-template-columns:repeat(3, minmax(200px, 1fr)); 
     }
 
     .kira {
-
         grid-column: span 3;
-        
-        
     }
-
+    
     .daniel{
         grid-column: span 2;
     }
